@@ -12,8 +12,8 @@ html {
 
 @layer base {
   :root {
-    --bg-primary: #FDFBF7;
-    --bg-secondary: #FFFFFF;
+    --bg-primary: #FCF9F2;
+    --bg-secondary: #FFFDF9;
     --text-primary: #1A1A1A;
     --text-secondary: #4B5563;
     --accent-orange: #C5A059;

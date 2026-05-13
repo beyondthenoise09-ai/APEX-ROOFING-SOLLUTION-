@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function Hero() {
   const x = useMotionValue(0);
@@ -85,15 +85,11 @@ export default function Hero() {
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4">
               <a 
-                href="#quote" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                href="tel:+1234567890" 
                 className="w-full sm:w-auto px-8 py-3.5 bg-[var(--text-primary)] text-[var(--bg-primary)] rounded-full font-medium text-[15px] transition-transform hover:scale-105 active:scale-95 text-center flex items-center justify-center gap-2"
               >
-                Get Free Quote
-                <ArrowRight size={16} />
+                <Phone size={16} />
+                Contact Us
               </a>
               <a 
                 href="#projects" 
